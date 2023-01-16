@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;400;600&display=swap');
+body{
+  font-family: 'Exo', sans-serif !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-fluid.Navbar-main {
+  padding: 13px;
+  box-shadow: 1px 1px 10px rgb(0 0 0 / 10%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button.btn.btn-custome {
+  background-color: #60c494;
   color: white;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+button.btn.btn-outcustome {
+  border: 1px solid #60C494;
+  color: #60C494;
+  margin-left: 20px;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table {
+  padding: 0px;
+}
+.text-custome{
+  color: #60C494;
+  font-weight: bold;
+  margin: 40px 0px;
+  font-size: 24px;
 }
