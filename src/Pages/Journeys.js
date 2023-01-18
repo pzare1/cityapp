@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-function Journeys() {
+
+function Journeys({dataJourney}) {
+    console.log(dataJourney)
     return (
         <>
             <div className="container mt-3 rounded-2">
@@ -19,33 +21,17 @@ function Journeys() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                    {dataJourney?.map((item) => (
+                        <tr>
+                        <th scope="row">{item?.id}</th>
+                        <td>{item?.name}</td>
+                        <td>{item?.username}</td>
+                        <td>{item?.email}</td>
+                        <td>{item?.address?.company?.name}</td>
                         <td>ffefw</td>
                         <td>ffefw</td>
-                        <td>ffefw</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>dwd</td>
-                        <td>dwd</td>
-                        <td>dwd</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>fee</td>
-                        <td>fee</td>
-                        <td>fee</td>
-                    </tr>
+                      </tr>
+                    ))}
                 </tbody>
             </table>
             </div>
